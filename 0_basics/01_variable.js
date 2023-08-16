@@ -1,4 +1,4 @@
-const myName = Kanahiya
+const myName = "Kanahiya"
 let myEmail = "kan@g.com"
 var myPassword = "1234"
 myCity = "Delhi"
