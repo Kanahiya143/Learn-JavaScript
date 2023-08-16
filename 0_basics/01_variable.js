@@ -5,7 +5,7 @@ myCity = "Delhi"
 let myState ;
 
 
-//myName = Sahni // not allowed to reasign in const variable
+//myName = Sahni // not allowed to reasign in the const variable
 
 myEmail = "sah@g.com"
 myPassword = "5678"
