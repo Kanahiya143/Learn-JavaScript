@@ -11,7 +11,7 @@ myEmail = "sah@g.com"
 myPassword = "5678"
 myCity = "gurugram"
 
-// not preferred to use var to declare the variable becoz its create issue like block and scope //
+// not preferred to use var to declare the variable becoz its create issue like block and scope 
 
 console.log(myName);
 
