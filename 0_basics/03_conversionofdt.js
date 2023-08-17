@@ -58,6 +58,10 @@ console.log(undefined >= 0)
 
 // for comparision null treat as zero but for equality it works differently 
 
+
+
+//----------------------prefix and postfix-------------------------------//
+
 let a = 20 
 a++
 console.log("a = " + a)
