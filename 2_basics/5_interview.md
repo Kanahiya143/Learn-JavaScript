@@ -55,6 +55,30 @@
 
 
 
+        ================================================================================Call Stack=====================================================================================
+
+        it is work on LIFO concept last in first out..
+
+function one() {
+    console.log("HI")
+    two()
+}
+
+function two() {
+    console.log("HI")
+    three()
+}
+
+function three() {
+    console.log("HI")
+}
+
+one()
+two()
+three()
+
+
+
 
         
                                                
