@@ -26,17 +26,37 @@ function one(){
     console.log(this.username); // it gives undefined means this keyword working on object
 }
 
-one()
+// one()
 
 const two = function(){
     let username = "Kanahiya"
-    console.log(this.username) // is also give undefined
+    console.log(this.username) // is also give undefined and only this give globle value of object
 }
- two ()
+ // two ()
 
  const three = () => {       // Arrow Function
     let username = "Kanahiya"
-    console.log(this.username) // undefined
+    console.log(this.username) // undefined And only this give empty object
  }
 
- three()
+ // three()
+
+
+ const addTwoNumber = (num1, num2) => { // basic arrorw function or explicit return
+    return num1 + num2
+ }
+ 
+ console.log(addTwoNumber(5, 6))
+
+ //const addThree = (num1) => num1 + 3 // implecit return arrow function
+ const addThree = (num1) => (num1 + 3) // implecit return arrow function
+
+console.log(addThree(5));
+
+const objReturn = () => ({username: "Kanhaiya"}) // object return by arrow fn
+
+console.log(objReturn());
+
+const myArr = [1, 2, 3, 5, 6] 
+myArr.forEach( function (){})
+myArr.forEach( () => {} )
