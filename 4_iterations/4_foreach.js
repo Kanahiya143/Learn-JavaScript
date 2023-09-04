@@ -22,19 +22,42 @@ webTech.forEach((item, index, arr) => {
 
 const myArray = [
     {
-        1: "Kanahiya",
-        2: "Ravi"
+        name1 : "Kanahiya",
+        name2 : "Ravi"
     },
     {
-        1: "Kanahiya",
-        2: "Ravi"
+        name1 : "Kanahiya",
+        name2 : "Ravi"
     },
     {
-        1: "Kanahiya",
-        2: "Ravi"
+        name1 : "Kanahiya",
+        name2 : "Ravi"
     },
-    {
-        1: "Kanahiya",
-        2: "Ravi"
-    }
+    
 ]
+myArray.forEach((item) => {
+    console.log(item.name1);
+})
+
+const myArray1 = [
+    {
+        1 : "Kanahiya",
+        2 : "Ravi"
+    },
+   
+    {
+        1 : "Kanahiya",
+        2 : "Ravi"
+    },
+   
+    {
+        1 : "Kanahiya",
+        2 : "Ravi"
+    },
+   
+    
+]
+
+myArray1.forEach((item) => {
+    console.log(item[2]);
+})
