@@ -36,7 +36,7 @@ const myArray = [
     
 ]
 myArray.forEach((item) => {
-    console.log(item.name1);
+    console.log(item.name1); // when object key is string
 })
 
 const myArray1 = [
@@ -59,5 +59,5 @@ const myArray1 = [
 ]
 
 myArray1.forEach((item) => {
-    console.log(item[2]);
+    console.log(item[2]); // when object key is number
 })
