@@ -6,6 +6,6 @@
 
 ### 2 - BMI Calculator - [click here](https://kanahiya143.github.io/BMI-Calculator/)
 
-### 3 - Digital Clock - [click here](https://kanahiya143.github.io/BackgroundChanger/)
+### 3 - Digital Clock - [click here](https://kanahiya143.github.io/DigitalWatch/)
 
 ### 4 - Number Guess Game - [click here](https://kanahiya143.github.io/GuessNumber/)
