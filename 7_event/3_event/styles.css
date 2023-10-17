@@ -1,0 +1,21 @@
+.container{
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+ h1{
+   font-size: 1.5rem;
+   font-weight: bold;
+ }
+
+ #stop,
+#start{
+  height: 35px;
+  width: 120px;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+}
