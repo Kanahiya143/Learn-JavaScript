@@ -5,6 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API</title>
+    <style>
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid black;
+        }
+        h1{
+            margin: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,27 +29,28 @@
     </p>
 </body>
 <script>
-    const myLink = 'https://api.github.com/users/hiteshchoudhary' // github api link
+    const myLink = 'https://api.github.com/users/kanahiya143' // github api link
 
     const method = new XMLHttpRequest(); // Old XML method to request for data and new key used for convert class into onject 
-    method.open('GET', method)  // request sent to github api
-    // console.log(method.readyState);  // readyState used for track the request at runtime only
-    // method.onreadystatechange = function () { // onreadystatechange is track requeest continuesly
-    //     console.log(method.readyState);
-    //     if (method.readyState === 4) {
-    //         const response = this.responseText
-    //         const data = JSON.parse(response); // api sent data in the form of string JSON.parse is convert into object 
-    //         console.log(typeof data);
-    //         console.log(data.followers); // fetch properties of object
-    //     }
-    // }
-    method.responseType = 'json'
-    method.onload = showResult;
-    method.send();
-
-    function showResult() {
-        console.log(method.response);
+    method.open('GET', myLink, true)  // request sent to github api
+    console.log(method.readyState);  // readyState used for track the request at runtime only
+    method.onreadystatechange = function () { // onreadystatechange is track requeest continuesly
+        console.log(method.readyState);
+        if (method.readyState === 4) {
+            const response = this.responseText // this use for current senario response
+            const data = JSON.parse(response); // api sent data in the form of string JSON.parse is convert into object 
+            console.log(typeof data);
+            console.log(data.followers); // fetch properties of object
+            console.log(data);
+            const img = data.avatar_url
+            const div = document.createElement('div')
+            const followers = data.followers
+            div.innerHTML =  `<img src = "${img}" >
+            <h3>Followers : ${followers}</h3>`
+            document.body.append(div)
+        }
     }
+    method.send();
 </script>
 
 </html>
