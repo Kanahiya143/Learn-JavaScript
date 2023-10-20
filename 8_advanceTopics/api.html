@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API</title>
     <style>
+        body{
+            background-color: #212121;
+            color: white;
+        }
         div{
             display: flex;
             justify-content: center;
@@ -15,6 +19,10 @@
         }
         h1{
             margin: auto;
+        }
+        img{
+            border: 5px solid white;
+            border-radius: 26vw;
         }
     </style>
 </head>
@@ -45,8 +53,11 @@
             const img = data.avatar_url
             const div = document.createElement('div')
             const followers = data.followers
+            const name = data.name
+            const following = data.following
             div.innerHTML =  `<img src = "${img}" >
-            <h3>Followers : ${followers}</h3>`
+            <h3>${name}</h3>
+            <h3>Followers : ${followers} ____ Following : ${following}</h3>`
             document.body.append(div)
         }
     }
