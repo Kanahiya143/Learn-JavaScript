@@ -22,17 +22,22 @@
     const method = new XMLHttpRequest(); // Old XML method to request for data and new key used for convert class into onject 
     method.open('GET', method)  // request sent to github api
     // console.log(method.readyState);  // readyState used for track the request at runtime only
-    method.onreadystatechange = function () { // onreadystatechange is track requeest continuesly
-        console.log(method.readyState);
-        if (method.readyState === 4) {
-            const response = this.responseText
-            const data = JSON.parse(response); // api sent data in the form of string JSON.parse is convert into object 
-            console.log(typeof data);
-            console.log(data.followers); // fetch properties of object
-        }
-
-    }
+    // method.onreadystatechange = function () { // onreadystatechange is track requeest continuesly
+    //     console.log(method.readyState);
+    //     if (method.readyState === 4) {
+    //         const response = this.responseText
+    //         const data = JSON.parse(response); // api sent data in the form of string JSON.parse is convert into object 
+    //         console.log(typeof data);
+    //         console.log(data.followers); // fetch properties of object
+    //     }
+    // }
+    method.responseType = 'json'
+    method.onload = showResult;
     method.send();
+
+    function showResult() {
+        console.log(method.response);
+    }
 </script>
 
 </html>
