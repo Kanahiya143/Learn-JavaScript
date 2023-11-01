@@ -17,7 +17,7 @@ console.log(user.welcomeMsg());
 console.log(this); // here this give the empty object in node.js enviroment and in browser enviroment it give window object 
 
 
-function User (username, age, gender) {
+function User (username, age, gender) {  // constructor function
     this.username = username // here this.username work as variable and only username is asigned value
     this.age = age
     this.gender = gender
