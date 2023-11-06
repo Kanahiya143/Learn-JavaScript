@@ -72,7 +72,7 @@ String.prototype.trueLength = function() {    // inject protype in string
 
 otherName.trueLength()  // use added prototype
 
-"Ramayan".trueLength()
+"Ramayan  ".trueLength()
 
 
 
