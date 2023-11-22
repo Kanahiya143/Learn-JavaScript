@@ -6,7 +6,7 @@
     <title>bind</title>
 </head>
 <body>
-    <button>Click</button>
+    <button id="ram">Click</button>
 </body>
 
     <script>
@@ -15,23 +15,20 @@
                this.filename = "React"   
                this.server = "https://systumm.com" 
 
-               document.querySelector('button')
-               .addEventListener('click', abc.tap
-               .bind(this)) // bind used for barrow method from another object
+               document.querySelector('#ram')
+               .addEventListener('click', this.tap.bind(this)) // bind used for barrow method from another object
                             //  here tap fuction taken from abc object and class React bind togeather 
             }
 
+            tap (){
+                 console.log("button clicked");
+                //  console.log(`${this}`);
+                 console.log(`${this.server}`);
+             }
 
         }
 
-        const abc = {
-           tap : function (){
-                console.log("button clicked");
-                console.log(`${this}`);
-                console.log(`${this.server}`);
-            }
-
-        }
+       
 
     </script>
 </html>
