@@ -18,7 +18,7 @@ console.log(gameName.toLowerCase())
 const newString = gameName.substring(0,5)
 console.log(newString)
  
-const anotherString = gameName.slice(-7,5)
+const anotherString = gameName.slice(-2,5)
 console.log(anotherString);
 
 const newStringOne = "     Kanahaiya     "
