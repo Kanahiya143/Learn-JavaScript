@@ -1,8 +1,8 @@
 
 // number to string 
 
-let age = 33
-let ageInString = String(age)
+let age = 33;
+let ageInString = String(age);
 console.log(ageInString);
 console.log(typeof ageInString);
 
@@ -10,7 +10,7 @@ console.log(typeof ageInString);
 
 // number and string to boolean
 
-let number = 2
+let number = 2;
 let numberInBoolean = Boolean(number)
 console.log(numberInBoolean)
 console.log(typeof numberInBoolean)
@@ -47,9 +47,10 @@ console.log("1" + 2 + 3)
 //--------------------comparision--------------------------------//
 
 
-console.log(null > 0)
+console.log(null > 0)   
 console.log(null == 0)
 console.log(null >= 0)
+console.log(null <= 0)
 
 
 console.log(undefined > 0)
