@@ -3,7 +3,7 @@ const score = 80
 
 console.log(name + " is scoring " + score) // old waty to conconate string
 
-console.log(`${name.toUpperCase()} is scoring ${score}`); // modern way
+console.log(`${name.toUpperCase()} is scoring ${score}`); // modern way by using backtics
 
 const gameName = new String('Kanahiya')
 console.log(gameName)
