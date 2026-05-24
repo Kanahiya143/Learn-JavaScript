@@ -1,4 +1,4 @@
-"use strict" // treat all js code as new ver
+"use strict" // treat all js code as new ver // also desable hoisting 
 
 // alert (3+3) // give o/p in browsr at that time we use nodejs
 
