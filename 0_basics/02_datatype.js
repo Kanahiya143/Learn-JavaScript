@@ -25,3 +25,5 @@ console.log(typeof age); // number
 console.log(typeof null); // object
 console.log(typeof undefined); // undefined
 
+console.log(typeof null === "object")  // true, its a bug
+
