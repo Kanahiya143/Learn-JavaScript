@@ -17,3 +17,5 @@ console.log(myName);
 
 console.table([myName, myEmail, myPassword, myCity, myState])
 
+console.log('Ram is God')
+
