@@ -1,6 +1,6 @@
 // array
 
-const myArr = [0, 1, 2, 3, 4, 5]
+const myArr = [0, 1, 2, 4, 3, 5]
 const myHeros = ["ravi", "akash", "Deepak"]
 
 const myArr2  = new Array(1, 2, 3, 4, 5)
@@ -9,9 +9,9 @@ console.log(myArr[1]);
 
 // array method
 
-myArr.push(6)
+myArr.push(6) // add element after last element
 myArr.push(7)
-myArr.pop()
+myArr.pop() // remove element from last index
 
 myArr.unshift(9) // add 9 at 0 index
 myArr.shift()    // remove 0 index ele
@@ -28,12 +28,12 @@ console.log(typeof newArr);
 
 console.log("A", myArr);
 
-const myN1 = myArr.slice(1,3) // display from 1 to 3( 3 is not include) ele without original  array
+const myN1 = myArr.slice(1,3) // display from 1 to 3( 3 is not include) ele without affecting  original  array
 console.log(myN1);
 
 console.log("B", myArr);
 
-const myN2 = myArr.splice(1,3) // display all ele from 1 to 3( 3 included) it remove the displayed element from original array 
+const myN2 = myArr.splice(1,3) // its include last or destination element and also remove from orginal array
 console.log(myN2)
 
 console.log("C", myArr);
