@@ -1,20 +1,20 @@
-var c = 300
+var c = 300  // var have always globle scope it accesable and update from everywhere
 
-let a = 3000
+let a = 3000  // it declare in globle scope it access from everywhere(any function )
 
 if(true){
         let a = 10
         const b = 20
         var c = 30
-        d = 200
+        d = 200  // without let, var and const its also declare in globle scope like var
 
-       // console.log("Inner a =",a);
+       // console.log("Inner a =",a);  //  let define a variable in the particular scope and also can not be access from outside of scope
 }
 
 
 
-// console.log("outer a =",  a);  // let define a variable in the particular scope 
-// console.log(b);  // same as let thier can not change 
+// console.log("outer a =",  a);  // print value of globle scope  a
+// console.log(b);  // same as 'let' 
 // console.log(c);     // var delare the variable is globally and access from anywhere and manupulate thier value
 // console.log(d);     // with any keyword delare the variable is globally and access from anywhere  
 
@@ -26,16 +26,17 @@ function one (){
         const username = "Kanhaiya"
 
         function two (){
-                const website = "GitHub"
+                const website = "GitHub" // child scope can access thier parent scope variables
                 console.log(username);
         }
-        // console.log(website); // give error bcoz parent scope can not access the child scope variable
+        // console.log(website); // give error bcoz parent scope can not access the child scope variables
 
-       two() // here we execute the two function, we can not execute two function out of one function scope and give error two not defined 
-       // child scope can access the the parent scope variable 
+       two()  
 }
 
 one() // execute one function
+
+ // two()  // we cant execute child function in globle scope
 
 if (true){
         const username = "Kanhaiya"

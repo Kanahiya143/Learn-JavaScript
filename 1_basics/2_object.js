@@ -26,7 +26,7 @@ Jsuser.email = "kanhaiya@chatgpt.com" // change the value of obj key
 // Object.freeze(Jsuser) // freeze the object no changes apply
 
 Jsuser.email = "kanhaiya@microsoft.com"
-// console.log(Jsuser); // print the object
+console.log(Jsuser); // print the object
 
 
 Jsuser.greeting = function(){
@@ -36,5 +36,4 @@ Jsuser.greetingTwo = function(){
     console.log(`Hello js user, ${this.name}`);
 }
 console.log(Jsuser.greeting()); // use function as a object key
-console.log(Jsuser.greetingTwo()); 
-
+Jsuser.greetingTwo(); 

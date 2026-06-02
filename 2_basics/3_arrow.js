@@ -23,7 +23,7 @@ console.log(this)   // it give empty object and in browser give window object
 
 function one(){
     username: "kanhaiya"
-    console.log(this.username); // it gives undefined means this keyword working on object
+    console.log(this.username); // it gives undefined means this keyword working on only object
 }
 
 // one()
