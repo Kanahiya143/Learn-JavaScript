@@ -13,7 +13,7 @@ webTech.forEach((item) => { // using arrow function
 //     console.log(item)
 // }
 
-// webTech.forEach(printMe) // here give only reference
+// webTech.forEach(printMe) // here we give only function reference
 
 webTech.forEach((item, index, arr) => {
     // console.log(item, index, arr);

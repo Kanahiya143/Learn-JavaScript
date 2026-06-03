@@ -48,10 +48,12 @@ for (let i = 1; i <= 20; i++) {
 
 console.log("Use of Continue");
 
+console.log("Use of Break");
+
 for (let i = 1; i <= 20; i++) {
     if (i == 5) {
         console.log(`5 is detected`);
-        continue
+        break
     }
     
     console.log(`Value of i: ${i}`);        

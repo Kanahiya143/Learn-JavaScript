@@ -11,7 +11,7 @@ if (userEmail) {
 // false, 0, -0, BigInt 0n, "", null, undefined, NaN
 
 //truthy values
-// "0", 'false', " ", [], {}, function(){}
+// "0", 'false', "_", [], {}, function(){}
 
 // if (userEmail.length === 0) {
 //     console.log("Array is empty");
@@ -24,7 +24,7 @@ if (Object.keys(emptyObj).length === 0) {
 }
 
 // Nullish Coalescing Operator (??): null undefined
-
+// if left operand is null or undefined then its give right operand otherwise its give left operand
 let val1;
 // val1 = 5 ?? 10
 // val1 = null ?? 10

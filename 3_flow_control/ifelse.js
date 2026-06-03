@@ -14,7 +14,7 @@ else{
 const score = 200
 
 if (score > 100){
-    let power = "fly"  // it can not access the variable from out of their scope
+    let power = "fly"  // this variable can not access from out of their scope
    // console.log(`User Power: ${power}`);
 }
 

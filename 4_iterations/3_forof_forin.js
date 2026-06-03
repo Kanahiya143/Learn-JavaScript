@@ -36,7 +36,7 @@ const myObject = {
 }
 
 // for (const [key, value] of myObject) {
-//     // console.log(key, ':-' ,value)  // object is not iterabke  in for in object 
+//     // console.log(key, ':-' ,value)  // object is not iterable in forOf loop
 // }
 
 
