@@ -48,10 +48,10 @@
 
                 // event propogation check by true and false argument
 
-                // document.querySelector('.images').addEventListener('click', function (e) { // modern way of clicked event 
-                //         // alert('ul clicked')
-                //         console.log('ul clicked');
-                // }) // true or false give the same output, If we are not give true or false it take defualt false
+                document.querySelector('.images').addEventListener('click', function (e) { // modern way of clicked event 
+                        // alert('ul clicked')
+                        console.log('ul clicked');
+                }) // true or false give the same output, If we are not give true or false it take defualt false
 
                 // document.querySelector('.images').addEventListener('click', function (e) { //
                 //         // alert('ul clicked')
@@ -72,13 +72,14 @@
                 //         fruit.remove()
                 // })
 
-                document.querySelector('.images').addEventListener('click', function (e) {
-                        let clickTag = e.target.tagName
-                        if (clickTag === 'IMG') {
-                                let fruit = e.target.parentNode
-                                fruit.remove()
-                        }
-                })
+                // document.querySelector('.images').addEventListener('click', function (e) {
+                //         let clickTag = e.target.tagName
+                //         if (clickTag === 'IMG') {
+                //                 let fruit = e.target.parentNode
+                //                 console.log(fruit)
+                //                 fruit.remove()
+                //         }
+                // })
 
         </script>
 </body>
