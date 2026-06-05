@@ -15,6 +15,6 @@ document.querySelector('#start').addEventListener('click', function () {
   let setTime = setInterval(newColor, 100);
   document.querySelector('#stop').addEventListener('click', function () {
     clearInterval(setTime);
-    setTime = null;
+    setTime = null;  // here we clear stored value for mamory optimization
   });
 });
