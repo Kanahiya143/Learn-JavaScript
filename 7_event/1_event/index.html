@@ -32,6 +32,7 @@
                                 id="orange" alt="" class="fruit"></li>
                 <li><img src="https://as2.ftcdn.net/v2/jpg/00/05/17/51/1000_F_5175134_XZxRCvoRh5EKDJe66C4VoKE1dhHWpsiC.jpg"
                                 id="guava" alt="" class="fruit"></li>
+                <li><a href="https://google.com" id="google">Google</a></li>
         </ul>
         <script>
                 // document.querySelector('#mango').onclick = function () {
@@ -46,25 +47,36 @@
                 // clientX, clientY, screenX, screenY
                 // altkey, ctrlkey, shiftkey, keyCode
 
-                // event propogation check by true and false argument
+                //////****** event propogation check by true and false argument *******\\\\\\\
 
-                document.querySelector('.images').addEventListener('click', function (e) { // modern way of clicked event 
-                        // alert('ul clicked')
-                        console.log('ul clicked');
-                }) // true or false give the same output, If we are not give true or false it take defualt false
-
-                // document.querySelector('.images').addEventListener('click', function (e) { //
+                // document.querySelector('.images').addEventListener('click', function (e) { // modern way of clicked event 
                 //         // alert('ul clicked')
                 //         console.log('ul clicked');
-                // },true) 
+                // },false) // third parameter is by default false. it control flow of events.
+
+                ///////*********   EXAMPLE OF EVENT PROPOGATION   *********\\\\\\\\\
+
+                document.querySelector('.images').addEventListener('click', function (e) { //
+                        console.log('ul clicked');
+                },false) 
 
                 // document.querySelector('#mango').addEventListener('click', function (e) { // modern way of clicked event 
-                //         // alert('ul clicked')
                 //         console.log('mango clicked');
                 // },true) 
 
+                // above example if we write false, first print mango clicked then ul clicked  
+                // and if we write true then ul clicked then mango clicked 
+
                 // for true event high scope to low
                 // for false event low scope to high
+
+                //////********* preventDefault() and stopPropogation() *******\\\\\\\\\
+
+                // document.getElementById('google').addEventListener('click', function(e){
+                //         e.preventDefault();  // it prevent from default event which are wriiten in html file or code
+                //         e.stopPropagation();  // it stop the bubbling and capturing propagation, only scope event is triggered
+                //         console.log('google clicked');
+                // },false)
 
                 // document.querySelector('.images').addEventListener('click', function (e) { // in this if we click on list tag whole list is deleted at one time
                 //         // console.log(e.target.parentNode);
