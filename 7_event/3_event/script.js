@@ -4,10 +4,11 @@ function newColor() {
   let color = '#';
 
   for (let i = 0; i < 6; i++) {
-    const index = Math.floor(Math.random() * 16);
+    const index = Math.floor(Math.random() * 16);  // 0 - 15 
     color += bg[index];
   }
-
+  console.log(color);
+  
   document.body.style.backgroundColor = color;
 }
 
